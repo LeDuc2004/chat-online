@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />v
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form action="" id="registerForm">
+        <div class="cha">
+            <div>
+                <div class="father"> <div class="logo">
+                <a href="wed.html">
+                  <img
+                    style="width: 200px; padding: 10px 10px"
+                    src="https://animehay.club/themes/img/logo.png"
+                    alt="logo animehay"
+                  />
+                </a>
+              </div>
+            <h3 > Đăng Ký </h3>
+            
+            <div >
+                <i  class="fa-solid fa-user"></i>
+                <input onblur="onblur1()"  name="username" style="padding-left: 15px;margin-bottom:5px" id="tk" type="text" placeholder="Tên tài khoản" ><br>
+                <span  style="color:red" id="spantk"><em><h4></h4></em></span>  
+            </div> 
+            <div >
+                <i  style="cursor:pointer ;" class="fa-solid fa-envelope"></i>
+                <input name="email" style="padding-left: 15px;margin-bottom:5px" id="email"  type="text" placeholder="email..."><br>
+                <span  style="color:red" id="spanemail"><em><h4></h4></em></span>
+            </div>
+            <div >
+                <i  style="cursor:pointer ;" id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>     
+                <input name="password" style="padding-left: 15px;margin-bottom:12px" id="mk" type="password" placeholder="mật khẩu"><br>
+                <span  style="color:red"  id="spanmk"></span>
+                </div>
+              <div >
+                <i  style="cursor:pointer ;" id="iconClose" onclick="showConfirmPassword()" class="fa-solid fa-eye"></i>
+                <input name="confirmPassword" style="padding-left: 15px;margin-bottom:12px"  id="remk" type="password" placeholder="xác nhận mật khẩu"><br>
+               <span  style="color:red" id="spanremk"></span> 
+               </div> 
+            
+           
+               
+            
+            <div id="btnsuccess"> 
+                <button type="submit" id="success" onclick="register()" style="cursor:pointer ;width : 150px;height: 40px;border-radius: 30px;margin-top: 40px;" > <h5>Tạo tài khoản</h5> </button>
+                <p style="margin-bottom:0" >or</p>
+                <button id="redirectLogin" style="width: 100px;height: 30px;border-radius: 30px;cursor: pointer;">Đăng nhập</button>
+            </div>
+           
+        </div>
+        </div> 
+        </form>
+        <script src="./text.js"></script>
+</body>
+<script>
+  
+  let check = new Date().toLocaleString()
+  console.log(check);
+    Validator({
+      form: "#registerForm",
+      rules: [Validator.isRequired("#tk"),
+       Validator.isEmail("#email")],
+    });
+  </script>
+</html>

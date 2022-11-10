@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+}
+#table{
+    position: relative;
+    right: 40px;
+    top: 50px;
+    z-index: 10000;
+    background-color: #242526;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: fixed;
+    
+    width: 30%;
+    height: 80vh;
+}
+#title{
+    background-color: #242526;
+    height: 10vh;
+    text-align: center;
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+
+}
+#chat{
+    height: 7vh;
+    text-align: center;
+    border: 1px solid black;
+}
+#infoInput{
+    position: relative;
+    height: 30px;
+    width: 100vh;
+}
+#spaceChat{
+    overflow-y: scroll;
+    border: 1px solid black;
+    height: calc(83vh - 30px)
+    
+}
+
+.list-content{
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: lightgray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.contentMe{
+cursor: pointer;
+background-color: #4984ff;
+display: flex;
+
+max-width: max-content;
+padding: 5px  10px;
+border-radius: 10px;
+max-width: 45%;
+text-align: justify;
+}
+.contentBotCha{
+display: flex;
+flex-direction: column;
+
+margin: 5px;
+}
+.contentMeCha{
+
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin: 5px;
+}
+.contentBoss{
+cursor: pointer;
+background-color: #3a3b3c;
+display: flex;
+width: max-content;
+padding: 5px  10px;
+border-radius: 10px;
+max-width: 45%;
+text-align: justify;
+margin-bottom: 10px;
+
+}
+.time{
+    align-self: center;
+}
+#btnChat{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#btnChat2{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#btnChat:hover{
+    font-size:35px;
+}
+#valueInputForm i{
+    color: rgb(0, 132, 255);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#valueInputForm {
+    height: 15%;
+}
+#valueInputForm button{
+    border: 0;
+    border-radius: 100px;
+}
+#valueInputForm {
+display: flex;
+align-items: center;
+}
+#valueInputForm input{
+    padding: 20px;
+    border-radius: 15px;
+}
